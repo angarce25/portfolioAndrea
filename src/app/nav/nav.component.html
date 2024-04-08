@@ -1,21 +1,26 @@
-<nav class="navbar-expand-md border-bottom mb-3">
-<div class="container">
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link text-secondary" routerLink="/home" routerLinkActive="text-dark" >Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-secondary"routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-secondary" routerLink="/resume" routerLinkActive="text-dark">Resume</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-secondary" routerLink="/contact" routerLinkActive="text-dark">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" routerLink="/blog" routerLinkActive="text-dark">Blog</a>
-      </li>
-    </ul>
-</div>
-</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom mb-3">
+    <div class="container justify-content-center">
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{'show': isMenuOpen}">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/resume" routerLinkActive="active">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
