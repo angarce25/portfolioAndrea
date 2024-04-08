@@ -1,3 +1,4 @@
+
 <div class="container">
     <div class="row">
         <!--About me-->
@@ -8,8 +9,17 @@
                     width="250" class="rounded-circle">
 
                 <p>
-                    Web Developer with one year of professional experience in the IT sector, I have collaborated with various teams, demonstrating my commitment, proactivity, problem-solving ability, communication skills and empathy. My enthusiasm for training and personal development is reflected in my continuous search for growth at the pace of technological advances.
-                    I am delighted to contribute to innovative projects and continue to evolve in the exciting field of web development. Ready to contribute and grow with a team committed to life. 🚀
+                    Web Developer with one year of professional experience in
+                    the IT sector, I have collaborated with various teams,
+                    demonstrating my commitment, proactivity, problem-solving
+                    ability, communication skills and empathy. My enthusiasm for
+                    training and personal development is reflected in my
+                    continuous search for growth at the pace of technological
+                    advances.
+                    I am delighted to contribute to innovative projects and
+                    continue to evolve in the exciting field of web development.
+                    Ready to contribute and grow with a team committed to life.
+                    🚀
                 </p>
             </div>
 
@@ -22,13 +32,17 @@
             </div>
             <carousel>
                 <div *ngFor="let picture of featuredProject.pictures">
-                    <slide><img src={{picture}} alt="slide"
-                            style="display: block; width: 90%;"></slide>
+                    <slide>
+                        <img src={{picture}} alt="slide" class="d-block mx-auto"
+                            style="width: 90%; height: auto;">
+                    </slide>
                 </div>
             </carousel>
 
-            <p class="mt-2" style="text-align: center;">{{featuredProject.summary}} </p>
-            <p style="text-align: center;">Visit the Portfolio section to learn more!</p>
+            <p class="mt-2"
+                style="text-align: center;">{{featuredProject.summary}} </p>
+            <p style="text-align: center;">Visit the Portfolio section to learn
+                more!</p>
         </div>
 
     </div>
