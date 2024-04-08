@@ -1,1 +1,114 @@
-<p>blog works!</p>
+<style>
+    .animated-border {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .animated-border .card {
+      position: relative;
+      z-index: 1;
+      overflow: hidden; /* Añade esto para asegurar que el overflow no afecte al borde animado */
+    }
+  
+    .animated-border .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Ajusta el ancho para que cubra todo el borde de la tarjeta */
+      height: 0;
+      border: 2px solid transparent;
+      animation: animate-border 2s linear infinite;
+    }
+  
+    @keyframes animate-border {
+      0% {
+        height: 0;
+        border-top-color: #3498db; /* Inicia el borde en la parte superior */
+        border-bottom-color: transparent; /* Borde transparente en la parte inferior */
+      }
+      50% {
+        height: 100%; /* Hace que el borde cubra toda la altura de la tarjeta */
+        border-top-color: transparent; /* Borde transparente en la parte superior */
+        border-bottom-color: transparent; /* Borde transparente en la parte inferior */
+        border-left-color: #3498db; /* Inicia el borde en la parte izquierda */
+      }
+      100% {
+        height: 0;
+        border-left-color: transparent; /* Borde transparente en la parte izquierda */
+        border-right-color: #3498db; /* Finaliza el borde en la parte derecha */
+      }
+    }
+  </style>
+  
+  
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Tarjeta HTML -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm animated-border">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">Etiquetas importantes: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;a&gt;</code></p>
+            <a href="https://www.youtube.com/@andreagarciacoding" class="btn btn-primary mt-auto">Ver Más</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Tarjeta CSS -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm animated-border">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">Propiedades clave: <code>color</code>, <code>font-size</code>, <code>margin</code>, <code>padding</code>, <code>display</code>, <code>flex</code>, <code>grid</code></p>
+            <a href="https://www.youtube.com/@andreagarciacoding" class="btn btn-primary mt-auto">Ver Más</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Tarjeta JavaScript -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm animated-border">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Conceptos fundamentales: Variables, Funciones, Condicionales, Bucles, Objetos, Arrays</p>
+            <a href="https://www.youtube.com/@andreagarciacoding" class="btn btn-primary mt-auto">Ver Más</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Tarjeta React -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm animated-border">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">React</h5>
+            <p class="card-text">Componentes, Estado, Propiedades, JSX, Ciclo de vida del componente</p>
+            <a href="https://www.youtube.com/@andreagarciacoding" class="btn btn-primary mt-auto">Ver Más</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Tarjeta Angular -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm animated-border">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Angular</h5>
+            <p class="card-text">Componentes, Directivas, Servicios, Inyección de dependencias, Módulos</p>
+            <a href="https://www.youtube.com/@andreagarciacoding" class="btn btn-primary mt-auto">Ver Más</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Tarjeta Tailwind CSS -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm animated-border">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Tailwind CSS</h5>
+            <p class="card-text">Framework de utilidades CSS para diseñar rápidamente interfaces modernas y personalizadas.</p>
+            <a href="https://www.youtube.com/@andreagarciacoding" class="btn btn-primary mt-auto">Ver Más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
