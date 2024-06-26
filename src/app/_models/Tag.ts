@@ -8,6 +8,7 @@ export class Tag {
     static readonly CSS = new Tag('CSS', 'pink');
     static readonly MONGODB = new Tag('MONGODB', 'blue');
     static readonly MYSQL = new Tag('MYSQL', 'darkblue');
+    static readonly tailwind = new Tag('Tailwind', 'salmon');
 
     private constructor(private readonly key: string, public readonly color: string) {}
 

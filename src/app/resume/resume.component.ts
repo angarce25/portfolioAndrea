@@ -15,8 +15,8 @@ export class ResumeComponent {
   DownloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/CV_AndreaGarcíaCedeño24.pdf');
-    link.setAttribute('download', 'CV_AndreaGarcíaCedeño24.pdf');
+    link.setAttribute('href', '../../assets/CV_AndreaGarcía_24.pdf');
+    link.setAttribute('download', 'CV_AndreaGarcía_24.pdf');
     link.click();
     link.remove();
 
